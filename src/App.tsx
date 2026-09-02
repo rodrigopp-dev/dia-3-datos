@@ -13,7 +13,7 @@ export default function App() {
       <Box sx={{ minHeight: '100vh', bgcolor: 'background.default', py: 4 }}>
         <Container maxWidth="md">
           <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-            Fase 3 — CRUD usuarios completo (GET · POST · PUT · DELETE)
+            Fase 3 — CRUD de usuarios completo (GET · POST · PUT · DELETE)
           </Typography>
           <UsersPage />
         </Container>
