@@ -20,9 +20,9 @@ type UserCardProps = {
 
 export function UserCard({ user, onEdit, onDelete }: UserCardProps) {
   return (
-    <Card>
+    <Card sx={{ width: '100%', height: '100%' }}>
       <CardContent>
-        <Stack direction="row" spacing={2} alignItems="center">
+        <Stack direction="column" spacing={2} alignItems="center">
           <Avatar sx={{ bgcolor: 'primary.main', width: 48, height: 48 }}>
             {initials(user.name)}
           </Avatar>
@@ -32,7 +32,7 @@ export function UserCard({ user, onEdit, onDelete }: UserCardProps) {
             <Typography variant="body2" color="text.secondary">
               @{user.username}
             </Typography>
-            <Typography variant="body2">{user.email}</Typography>
+            <Typography variant="body2" color="primary">{user.email}</Typography>
           </Stack>
 
           <Stack direction="row">
